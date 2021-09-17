@@ -1,0 +1,12 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class "Assembler" as P {
+Bicycle Tool
+Bicycle,assembly charge  Assembling a bike (Bicycle parts,assembly order; Technical documentation )
+}
+hide circle
+@enduml
