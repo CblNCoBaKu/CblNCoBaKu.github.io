@@ -1,0 +1,31 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide methods
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Пользователь_системы"
+actor "Тестировщик"
+actor "Приложение_для_тестирования" 
+actor "Программный_модуль" 
+
+Приложение_для_тестирования --> Программный_модуль
+
+rectangle Софт {
+usecase case1 as "Задать параметры тестирования"
+usecase case2 as "Выбрать параметры передаваемых пакетов"
+usecase case3 as "Выбрать методологию тестирования"
+usecase case4 as "Подключить клиент к серверу"
+ Пользователь_системы <-- Тестировщик
+ Тестировщик -- case1
+ (case1) .> (case2) : include
+ (case1) .> (case3) : include
+ (case1) .> (case4) : include
+ case1 -- Приложение_для_тестирования 
+ case2 -- Приложение_для_тестирования
+ case3 -- Приложение_для_тестирования 
+ case4 -- Приложение_для_тестирования
+}
+
+@enduml
