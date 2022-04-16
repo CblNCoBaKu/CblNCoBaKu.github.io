@@ -1,0 +1,28 @@
+@startuml
+
+component WorkStation1 {
+component "Windоws OS" {
+component Клиент {
+      [Список параметров]
+      [Графический интерфейс]
+      [Список методологий]
+      [Ядро]
+[Графический интерфейс] .> [Ядро]
+
+[Ядро] ..> [Список параметров]
+[Ядро] ..> [Список методологий]
+
+}
+}
+}
+
+component WorkStation2 {
+component "Windows OS" {
+component Сервер {
+      [Ядрo]
+}
+}
+}
+Клиент ..> Сервер : UDP/TCP
+Сервер ..> Клиент : UDP/TCP
+@enduml
