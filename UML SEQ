@@ -1,0 +1,43 @@
+@startuml
+skinparam monochrome true
+
+actor Тестировщик as user
+participant "Форма программы" as cli
+participant "Программа" as serv
+database "База данных" as base
+
+user -> cli: Подключить клиентскую часть к серверу
+activate cli
+cli -> serv : Запросить подключение клиента к серверу
+activate serv
+serv -> cli : Синхронизация клиентской и серверной частей программы
+deactivate serv
+cli -> user   : Клиент подключен к серверу
+deactivate cli
+
+user -> cli: Выбрать методологию тестирования
+activate cli
+cli -> serv : Запросить подключение отмеченной методологии
+activate serv
+serv -> base : Запросить выбранную методолгию из списка 
+activate base
+base --> serv
+deactivate base
+serv --> cli
+deactivate serv
+cli -> user   : Методолгия тестирования выбрана
+deactivate cli
+
+user -> cli: Выбрать параметры тестирования
+activate cli
+cli -> serv : Запросить подключение отмеченных параметров тестирования
+activate serv
+serv -> base : Запросить выбранные параметры из списка
+activate base
+base --> serv
+deactivate base
+serv --> cli
+deactivate serv
+cli -> user   : Параметры тестирования выбраны
+deactivate cli
+@enduml
