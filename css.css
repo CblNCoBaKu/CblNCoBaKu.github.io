@@ -19,30 +19,32 @@ h3 {
   margin-bottom: 50px;
 }
 p {
-	margin-left: 150px;
+	margin-left: 5%;
   text-align: left;
   margin-top: 25px;
   margin-bottom:10px;
   font-size: 18pt;
 }
 li {
-	margin-left: 150px;
+	margin-left: 5%;
   margin-bottom: 10px;
 font-size: 18pt;
+
 }
 ul{
-	margin-left: -125px;
+	margin-left: -5%;
   margin-top: 10px;
 font-size: 18pt;
   
 }
 body {
-  margin-left: 150px;
+  margin-left: 5%;
 font-size: 18pt;
   margin-right: 25px;
   background-color: #7FFFD4;
 }
 p1 {
-	margin-left: 150px;
+	margin-left: 5%;
 	font-size: 18pt;
 }
+	  
