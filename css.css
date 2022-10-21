@@ -1,0 +1,37 @@
+/* CSS styles */
+h1 {
+font-family: cursive;
+color: #000000;
+}
+h1 {
+    text-align: center;
+}	  
+h2 {
+  font-family: cursive;
+   margin-bottom: -20px;
+    text-align: center;
+}
+h3 {
+  text-align: center;
+   font-family: system-ui;
+   margin-top: 50px;
+  margin-bottom: 50px;
+}
+p {
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom:10px
+}
+li {
+  margin-bottom: 10px;
+}
+ul{
+  margin-top: 10px;
+}
+body {
+  margin-left: 25px;
+  margin-right: 25px;
+  background-image: url("https://kartinkin.net/uploads/posts/2022-02/1644941105_79-kartinkin-net-p-kartinki-informatika-85.jpg");
+}
+
+
