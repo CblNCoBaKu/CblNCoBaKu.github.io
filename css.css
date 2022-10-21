@@ -12,26 +12,37 @@ h2 {
     text-align: center;
 }
 h3 {
+	
   text-align: center;
    font-family: system-ui;
    margin-top: 50px;
   margin-bottom: 50px;
 }
 p {
+	margin-left: 150px;
   text-align: left;
   margin-top: 25px;
-  margin-bottom:10px
+  margin-bottom:10px;
+  font-size: 18pt;
 }
 li {
+	margin-left: 150px;
   margin-bottom: 10px;
+font-size: 18pt;
 }
 ul{
+	margin-left: -125px;
   margin-top: 10px;
+font-size: 18pt;
+  
 }
 body {
-  margin-left: 25px;
+  margin-left: 150px;
+font-size: 18pt;
   margin-right: 25px;
-  background-color: rgba(255, 255, 128, .5);
+  background-image: url("https://kartinkin.net/uploads/posts/2022-02/1644941105_79-kartinkin-net-p-kartinki-informatika-85.jpg");
 }
-
-
+p1 {
+	margin-left: 150px;
+	font-size: 18pt;
+}
